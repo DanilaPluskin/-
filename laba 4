@@ -1,0 +1,15 @@
+def y(x):
+    return 2*x**4 - 16*x**3 + 27*x**2 + 40*x - 4
+max = y(-5)
+min = y(-5)
+for x in range(-5, 6):
+    values = y(x)
+    if values > max:
+        max = values
+    if values < min:
+        min = values
+print("Максимум:", max)
+print("Минимум:", min)
+
+Максимум: 3721
+Минимум: -4
