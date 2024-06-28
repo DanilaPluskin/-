@@ -1,1 +1,11 @@
+def uk(x, k):
+    return (-1)**k * x**k/(k+1)*(k+3)
+x_values = [0.1, 0.3, 0.4, 0.7, 1.0]
+n = 10
+for x in x_values:
+    S = 0
+    for k in range(1, n + 1):
+        S += uk(x, k)
+    print(':    X =', f"{x:.1f}", '     S =',f"{S:.6f}", '  :')
+    print('-----------------------------------')
 
